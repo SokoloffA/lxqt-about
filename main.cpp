@@ -26,14 +26,11 @@
  * END_COMMON_COPYRIGHT_HEADER */
 
 
-#include <LxQtApplication>
-#include <LxQtAboutDialog>
-#include <LxQtGridLayout>
+#include <LxQt/Application>
+#include <LxQt/AboutDialog>
 
 int main(int argc, char *argv[])
 {
-    //QApplication app(argc, argv);
-    //LxQt::GridLayout *g = new LxQt::GridLayout();
     LxQt::Application app(argc, argv);
     LxQt::AboutDialog dlg;
     return app.exec();
